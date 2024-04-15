@@ -1,0 +1,8 @@
+<div>
+    <li *ngFor="let item of currentItems">
+        <label>
+          <input class="checkbox" type="checkbox" [checked]="item.isComplete" (click)="toggleItem(item)"> {{item.wishText}}
+        </label>
+    </li>
+</div>
+

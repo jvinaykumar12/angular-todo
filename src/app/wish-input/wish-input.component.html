@@ -1,0 +1,9 @@
+<form class="row align-items-center justify-content-center">
+    <div class="col-sm-6">
+      <label>todo</label>
+      <input type="text" name="wish" class="form-control" [(ngModel)]="wish">
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary" (click)="$event.preventDefault(); addNewWish()"> add wish </button>
+    </div>
+  </form>
