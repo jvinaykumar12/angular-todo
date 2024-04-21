@@ -1,8 +1,6 @@
 <div>
     <li *ngFor="let item of currentItems">
-        <label>
-          <input class="checkbox" type="checkbox" [checked]="item.isComplete" (click)="toggleItem(item)"> {{item.wishText}}
-        </label>
+      <wish-item  [ngClass] = "item.isFullfilled ? 'strikeout' : ''" [(isFullfilled)] = "item.isFullfilled" [wishText] = "item.wishText"></wish-item>
     </li>
 </div>
 

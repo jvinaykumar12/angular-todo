@@ -1,3 +1,3 @@
 export class Wishlist {
-    constructor(public wishText : string, public isComplete : boolean = false) {}
+    constructor(public wishText : string, public isFullfilled : boolean = false) {}
 }

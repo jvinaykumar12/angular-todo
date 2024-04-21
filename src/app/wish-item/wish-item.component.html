@@ -1,0 +1,10 @@
+<div class="d-flex jusfity-content-between">
+    <div>
+        <label>   
+            <input class="checkbox" type="checkbox" [checked] = "isFullfilled" (click)="toggleItem()"> {{wishText}}
+        </label>
+    </div>
+    <div>
+        <button type="button" class="btn-close" (click)="removeWish()">remove</button>
+    </div>
+</div>
